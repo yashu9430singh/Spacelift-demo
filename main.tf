@@ -50,11 +50,12 @@ resource "aws_route_table_association" "public_assoc" {
 }
  
 resource "aws_s3_bucket" "terraform_bucket" {
-  bucket        = "terraform-demo-bucket-assignment2"
+  bucket        = "terraform-demo-bucket-assignment2-138245"
   force_destroy = true
  
   tags = {
     Name        = "Terraform-S3-bucket"
     Environment = "Dev"
   }
+
 }
